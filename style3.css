@@ -1,0 +1,130 @@
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+    left: 100%;
+    top: 100%;
+}
+.pbox{
+    background-color: blue;
+    height: 600px;
+    width: 700px;
+    position: relative;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.Box{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 300px;
+    text-align: center;
+    padding: 20px;
+    rotatio 
+}
+.Box:after{
+    content: "yamin";
+    display: block;
+    clear: both;
+    
+    background: black;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 100%;
+    top: 50%;
+
+}
+.Box:before{
+    content: "yamin";
+    display: block;
+    clear: both;
+    
+    background: green;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: -200px;
+    top: -200px;
+}
+.Box:hover{
+    background-color: crimson;
+}
+.Box:hover:after{
+    left: -200px;
+    top: -450px;
+    transition: 2s;
+}
+.Box:hover:before{
+    left: -200px;
+    top: -450px;
+    left: 100%;
+    top: 100%;
+    transition: 2s;
+}
+
+body{
+    margin: 0px;;
+}
+.menu{
+    background-color: darkturquoise;
+    color: white;
+    overflow: hidden;
+    
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+}
+.menu > ul > li{
+    float: left;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.menu ul li a:hover{
+    background-color: brown
+}
+.menu ul .about a{
+    background: chocolate;
+}
+.menu ul ul{
+    padding-left: 0;
+    background-color: cornflowerblue;
+    position: absolute;
+    display: none;
+}
+.menu ul ul:hover{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
