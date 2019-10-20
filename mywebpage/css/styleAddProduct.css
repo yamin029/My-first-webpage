@@ -1,0 +1,10 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    margin-top: 30px;
+}
+.panel-title{
+    text-align: center;
+}
