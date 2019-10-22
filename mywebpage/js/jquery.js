@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  $('.shop-item').hide()
+  //$('.shop-item').hide()
   var products=[]
   /*
   var products = [
@@ -14,7 +14,6 @@ $(document).ready(function(){
 */
 console.log(products)
 
-  
 
   $('.submit-btn').click(function(){
     alert("You Are Going to Add a New Product")
@@ -39,7 +38,7 @@ console.log(products)
   console.log(productss)
   
   $.each(productss,function(i,val){
-    console.log("hi")
+    //console.log("hi")
     var insertProduct = $('<div class="shop-item"><span class="shop-item-title"></span><img src="" class="shop-item-image "><div class="product-description " style="display:none"></div><div class="shop-item-details"><span class="shop-item-price"></span><button class="btn btn-primary shop-item-button ">ADD TO cart</button></div></div>')
     insertProduct.children("span").text(productss[i].title)
     insertProduct.children("img").attr('src',productss[i].img)
@@ -79,6 +78,8 @@ console.log(products)
       cartrow.append(cartRowContent)
       console.log(cartrow)
       $('.cart-items').append(cartrow)
+
+      
   
     let temp = $('.cart-total').children("span").text()
       console.log(temp)
@@ -86,7 +87,10 @@ console.log(products)
       console.log(temp)
   
       $('.cart-total').children("span").text(pr+"$")
-  
+    
+
+      var x =$('.cart-added-item').children("div")
+      console.log(x)
       
     }
   
@@ -97,5 +101,6 @@ console.log(products)
     //$('.add-item-page').load('index.html')
 
   })
+  //window.localStorage.setItem('productsArray',JSON.stringify(products))
 })
   
